@@ -1,0 +1,138 @@
+.logo {
+    width: 141px;
+    height: 40px;
+    margin-top: 8px;
+}
+
+h3 {
+    color: #000;
+}
+
+.line {
+    width: 100vw;
+    height: 2px;
+    background-color: #e2e1e1;
+    box-shadow: 0 2px 4px rgba(48, 47, 47, 0.2);
+    margin-top: 10px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: auto;
+    max-width: 1280px;
+    align-items: center;
+}
+
+.hero-image {
+    width: 600px;
+    height: 600px;
+}
+
+.hero_btn {
+    background-color: #000;
+    color: #FFF;
+    padding-block: 12px;
+    padding-inline: 16px;
+    outline: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hero_btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.input-field {
+    height: 43px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-right: 8px;
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: 150px 400px;
+    gap: 8px
+}
+
+
+/* From Uiverse.io by Satwinder04 */
+/* Input container */
+.username-container {
+    position: relative;
+    margin: 8px;
+}
+
+/* Input field */
+.u-input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+    color: #000;
+}
+
+/* Input label */
+.u-input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+/* Input highlight */
+.u-input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #111213;
+    transition: all 0.3s ease;
+}
+
+/* Input field:focus styles */
+.u-input-field:focus+.u-input-label {
+    top: -8px;
+    font-size: 12px;
+    color: #0c0c0c;
+}
+
+.u-input-field:focus+.u-input-label+.u-input-highlight {
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .hero-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .input-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-inline: 1rem;
+    }
+
+    .input-field {
+        margin-bottom: 8px;
+    }
+}
